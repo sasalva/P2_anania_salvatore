@@ -3,7 +3,175 @@ body
     font-family: 'Raleway', sans-serif;
 }
 
-a
+header
 {
-    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 480px)
+{
+
+    header
+    {
+        justify-content: flex-end;
+    }
+
+    #logo
+    {
+        margin: 2%;
+        margin-right: 40%;
+    }
+
+    .menu
+    {
+        text-decoration: none;
+        color: #0065fc;
+    }
+
+    .menu:nth-child(2)
+    {
+        flex: 2;
+        order: 2;
+        font-size: small;
+        padding-bottom: 10px;
+        text-align: center;
+        color: black;
+    }
+
+    .menu:nth-child(3)
+    {
+        text-align: center;
+        flex: 2;
+        order: 3;
+        font-size: small;
+        padding-bottom: 10px;
+        color: black;
+    }
+
+    .menu:hover
+    {
+        color: #0065fc;
+        border-bottom: 5px solid;
+        border-color: #0065fc;
+    }
+
+    .menu:nth-child(4)
+    {
+        order: 1;
+        font-weight: bold;
+        border: none;
+        text-align: end;
+        font-size: small;
+        margin-left: 40%;
+        margin-right: 10px;
+        margin-top: 4%;
+        align-self: baseline;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px)
+{
+
+    #logo
+    {
+        margin: 2%;
+        margin-right: 70%;
+    }
+
+    .menu
+    {
+        text-decoration: none;
+        color: #0065fc;
+    }
+
+    .menu:nth-child(2)
+    {
+        text-align: center;
+        flex: 2;
+        font-size: small;
+        order: 2;
+        padding-bottom: 10px;
+        color: black;
+    }
+
+    .menu:nth-child(3)
+    {
+        text-align: center;
+        flex: 2;
+        font-size: small;
+        align-self: center;
+        order: 3;
+        padding-bottom: 10px;
+        color: black;
+    }
+
+    .menu:hover
+    {
+        color: #0065fc;
+        border-bottom: 5px solid;
+        border-color: #0065fc;
+    }
+
+    .menu:nth-child(4)
+    {
+        order: 1;
+        font-weight: bold;
+        border: none;
+        text-align: end;
+        font-size: small;
+        margin-right: 5%;
+        margin-top: 4%;
+    }
+
+}
+
+@media only screen and (min-width: 1025px)
+{
+    header
+    {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    #logo
+    {
+        margin: 40px;
+        margin-left: 10px;
+    }
+
+    .menu
+    {
+        text-decoration: none;
+        color: #0065fc;
+    }
+    
+    .menu:nth-child(2)
+    {
+        margin-right: 4%;
+        margin-top: 40px;
+        margin-left: 65%;
+        color: black;
+    }
+
+    .menu:nth-child(3)
+    {
+        margin-right: 4%;
+        margin-top: 40px;
+        color: black;
+    }
+
+    .menu:nth-child(4)
+    {
+        margin-top: 40px;
+        margin-right: 4%;
+        font-weight: bold;
+    }
+
+    .menu:hover
+    {
+        color: #0065fc;
+    }
+}
+
