@@ -1,0 +1,343 @@
+@media only screen and (max-width: 480px)
+{
+
+    header
+    {
+        flex-flow: column;
+        position: relative;
+    }
+
+    #logo
+    {
+        margin: 2%;
+        margin-right: 70%;
+    }
+
+    nav
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu
+    {
+        text-decoration: none;
+        color: #0065fc;
+    }
+
+    .menu:nth-child(1)
+    {
+        color: black;
+        display: flex;
+        justify-content: center;
+        flex: 2;
+    }
+
+    .menu:nth-child(2)
+    {
+        color: black;
+        display: flex;
+        justify-content: center;
+        flex: 2;
+    }
+
+    .menu:hover
+    {
+        color: #0065fc;
+        border-bottom: 5px solid;
+        border-color: #0065fc;
+    }
+
+    .menu:nth-child(3)
+    {
+        position: absolute;
+        margin-top: -7.5%;
+        margin-left: 80%;
+        border: none;
+    }
+
+    section
+    {
+        display: flex;
+        flex-direction: column;
+        margin:2%;
+    }
+
+    #présentation
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+    }
+
+    h1, p 
+    {
+        margin: 0px;
+        margin-top: 0.5%;
+    }
+
+    #recherche
+    {
+        display: flex;
+        justify-content: flex-start;
+        flex: 1 40px;
+        margin: 2%;
+    }
+
+    #gps
+    {
+        border-radius: 5px 0px 0px 5px;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+    }
+
+    #test
+    {
+        display: flex;
+        width: 80%;
+    }
+
+    #ville
+    {
+        border: none;
+        border-top: #f2f2f2 2px solid;
+        border-bottom: #f2f2f2 2px solid;
+        width: 100%;
+    }
+
+    .fa-search
+    {
+        color: white;
+    }
+
+    #loupe
+    {
+        background-color: #0065fc;
+        border: none;
+        border-radius: 5px;
+        width: 10%;
+    }
+
+    #filtres
+    {
+        margin: 2%;
+    }
+
+    #filtres nav
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #filtres button
+    {
+        display: flex;
+        padding: 0;
+        border: 2px solid #f2f2f2;
+        background-color: white;
+        border-radius: 20px;
+        height: 40px;
+        margin-right: 5%;
+        margin-bottom: 2%;
+    }
+
+    #filtres i
+    {
+        display: flex;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        margin-top: -2px;
+        margin-left: -2px;
+        align-items: center;
+        background-color: #deebff;
+        border-radius: 40px;
+        color: #0065fc;
+    }
+
+    #filtres p
+    {
+        display: flex;
+        flex: 2;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px 0px 10px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px)
+{
+
+
+    header
+    {
+        flex-flow: column;
+        position: relative;
+    }
+
+    #logo
+    {
+        margin: 2%;
+        margin-right: 70%;
+    }
+
+    nav
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu
+    {
+        text-decoration: none;
+        color: #0065fc;
+    }
+
+    .menu:nth-child(1)
+    {
+        color: black;
+        display: flex;
+        justify-content: center;
+        flex: 2;
+    }
+
+    .menu:nth-child(2)
+    {
+        color: black;
+        display: flex;
+        justify-content: center;
+        flex: 2;
+    }
+
+    .menu:hover
+    {
+        color: #0065fc;
+        border-bottom: 5px solid;
+        border-color: #0065fc;
+    }
+
+    .menu:nth-child(3)
+    {
+        position: absolute;
+        margin-top: -7.5%;
+        margin-left: 80%;
+        border: none;
+    }
+
+    section
+    {
+        display: flex;
+        flex-direction: column;
+        margin:2%;
+    }
+
+    #présentation
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+    }
+
+    h1, p 
+    {
+        margin: 0px;
+        margin-top: 0.5%;
+    }
+
+    #recherche
+    {
+        display: flex;
+        justify-content: flex-start;
+        flex: 1 40px;
+        margin: 2%;
+    }
+
+    #gps
+    {
+        border-radius: 5px 0px 0px 5px;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+    }
+
+    #test
+    {
+        display: flex;
+        width: 80%;
+    }
+
+    #ville
+    {
+        border: none;
+        border-top: #f2f2f2 2px solid;
+        border-bottom: #f2f2f2 2px solid;
+        width: 100%;
+    }
+
+    .fa-search
+    {
+        color: white;
+    }
+
+    #loupe
+    {
+        background-color: #0065fc;
+        border: none;
+        border-radius: 5px;
+        width: 10%;
+    }
+
+    #filtres
+    {
+        margin: 2%;
+    }
+
+    #filtres nav
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #filtres button
+    {
+        display: flex;
+        padding: 0;
+        border: 2px solid #f2f2f2;
+        background-color: white;
+        border-radius: 20px;
+        height: 40px;
+        margin-right: 5%;
+        margin-bottom: 2%;
+    }
+
+    #filtres i
+    {
+        display: flex;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        margin-top: -2px;
+        margin-left: -2px;
+        align-items: center;
+        background-color: #deebff;
+        border-radius: 40px;
+        color: #0065fc;
+    }
+
+    #filtres p
+    {
+        display: flex;
+        flex: 2;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px 0px 10px;
+    }
+
+
+}

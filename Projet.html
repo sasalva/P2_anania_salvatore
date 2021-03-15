@@ -1,23 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head> <!-- En-tête de la page -->
         <meta charset="utf-8" />
+        <meta name="description" content="Premier projet de développement web avec Openclassrooms" />
         <link rel="stylesheet" href="Projet.css" />
-        <link rel="stylesheet" href="Projet_mobile.css" />
+        <link rel="stylesheet" href="Projet_mobile.css" /> 
         <title>Projet Reservia</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/08d31474b9.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
         <header>
-            <img id= logo src="Projet 2 - Reservia/images/logo/Reservia.svg"/>
+            <img id= logo src="Projet2-Reservia/images/logo/Reservia.svg" alt="logo du site" />
             <nav>
                 <a class="menu" href="#">Hébergement</a>
                 <a class="menu" href="#">Activités</a>
                 <a class="menu" href="#">S'inscrire</a>
             </nav>
         </header>
+        <section>
+            <div id="présentation">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+            <div id="recherche">
+                <i id="gps" class="fas fa-map-marker-alt"></i>
+                <form id="test" method="post" action="traitement.php">
+                    <input id="ville" type="text" name="Ville" placeholder="Ville" />
+                 </form>
+                 <button id="loupe" ><i class="fas fa-search" ></i></button>
+            </div>
+            <div id="filtres">
+                <h2>Filtres</h2>
+                <nav>
+                    <button id="économique" ><i class="fas fa-money-bill-wave"></i><p>Économique</p></button>
+                    <button id="familial" ><i class="fas fa-male"></i><p>Familial</p></button>
+                    <button id="romantique" ><i class="fas fa-heart"></i><p>Romantique</p></button>
+                    <button id="animaux" ><i class="fas fa-dog"></i><p>Animaux Autorisés</p></button>
+                </nav>
+            </div>
+        </section>
         <footer>
 
         </footer>
