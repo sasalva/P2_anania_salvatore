@@ -64,7 +64,7 @@ main
     .menu:hover
     {
         color: #0065fc;
-        border-top: 5px solid;
+        border-top: 2px solid;
         border-color: #0065fc;
     }
 
@@ -76,19 +76,20 @@ main
 
     /*------------------------------------body--------------------------------------------*/
     /*------------------------------------présentation du site--------------------------------------------*/
-    #présentation
+    #presentation
     {
         margin-left: 2%;
     }
 
-    #présentation h1
+    #presentation h1
     {
         margin: unset;
     }
 
-    #présentation p
+    #presentation p
     {
         margin: unset;
+        margin-top: 0.5%;
         margin-bottom: 2%;
     }
 
@@ -127,6 +128,13 @@ main
         border-top: #f2f2f2 2px solid;
         border-bottom: #f2f2f2 2px solid;
         width: 100%;
+        font-weight: bold;
+        padding-left: 5%;
+    }
+
+    #ville input:focus
+    {
+        outline: none;
     }
 
     #ville i
@@ -167,6 +175,7 @@ main
     #filtres button
     {
         display: flex;
+        align-items: center;
         padding: 0;
         border: 2px solid #d9d9d9;
         background-color: white;
@@ -179,9 +188,8 @@ main
     {
         display: flex;
         justify-content: center;
-        width: 42px;
-        height: 42px;
-        margin-top: -2px;
+        width: 40px;
+        height: 40px;
         margin-left: -2px;
         align-items: center;
         background-color: #deebff;
@@ -196,6 +204,7 @@ main
         justify-content: center;
         align-items: center;
         margin: 0px 10px 0px 10px;
+        font-weight: bold;
     }
 
     #info
@@ -210,15 +219,15 @@ main
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 30px;
+        height: 20px;
         color: #0065fc;
         border: #f2f2f2 solid 1px;
-        width: 30px;
+        width: 20px;
         border-radius: 20px;
         margin-right: 1%;
     }
 
-    #ordi
+    #affichage_ordi
     {
         display: flex;
     }
@@ -227,24 +236,32 @@ main
     {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 2%;
         padding: 2%;
+        padding-top: 1%;
         background-color: #f2f2f2;
         order: 2;
         border-radius: 15px;
         flex: 1;
     }
+    
+    #populaire h3
+    {
+        margin: unset;
+    }
 
     #populaire .cinq-etoile, #populaire .quatre-etoile
     {
         justify-content: space-between;
+        margin: 2%;
+        margin-left: 5%;
     }
 
     .encart
     {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
     }
 
@@ -260,7 +277,7 @@ main
         display: flex;
         flex-direction: column;
         flex: 1;
-        margin: 2%;
+        margin: 1% 4% 4% 5%;
     }
 
     .quatre-etoile
@@ -268,20 +285,29 @@ main
         display: flex;
         flex-direction: column;
         flex: 1;
-        margin: 2%;
+        margin: 1% 4% 4% 5%;
     }
 
-    .quatre-etoile h4 ,p
+    .trois-etoile
+    {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: 1% 4% 4% 5%;
+    }
+
+
+    .quatre-etoile h4 , .quatre-etoile p
     {
         margin: 1%;
     }
 
-    .cinq-etoile h4 ,p
+    .cinq-etoile h4 , .cinq-etoile p
     {
         margin: 1%;
     }
 
-    .trois-etoile h4 ,p
+    .trois-etoile h4 , .trois-etoile p
     {
         margin: 1%;
     }
@@ -321,7 +347,7 @@ main
         margin: 2%;
         width: 28%;
         border-radius: 15px;
-        box-shadow: 6px 6px 6px #f3f3f3;
+        box-shadow: 0px 0px 6px 6px #f3f3f3;
     }
 
     .vignette-vertical img
@@ -333,23 +359,34 @@ main
         border-radius: 15px 15px 0px 0px;
     }
 
-    #hébergements h3
+    #hebergements h3
     {
         width: 100%;
-        margin: 2%;
+        margin-top: 5%;
+        margin-left: 2%;
         align-items: center;
         display: flex;
     }
 
-    #hébergements
+    #hebergements h3:last-child
+    {
+        width: 100%;
+        margin: 3% 0% 7% 2%;
+        align-items: center;
+        display: flex;
+    }
+
+    #hebergements
     {
         display: flex;
         flex-wrap: wrap;
         margin: 2%;
+        padding-left: 1%;
         background-color: #f2f2f2;
         order: 1;
         flex: 2;
         border-radius: 15px;
+        justify-content: space-around;
     }
 
     #activite
@@ -369,58 +406,92 @@ main
     #conteneur
     {
         display: flex;
-        flex-wrap: wrap;
-        max-height: 450px;
+        height: 450px;
     }
 
     .vignette
     {
         display: flex;
         flex-direction: column;
-        width: 22%;
+        flex: 1;
         border-radius: 15px;
-        box-shadow: 6px 6px 6px #f3f3f3;
+        box-shadow: 0px 0px 6px 6px #f3f3f3;
     }
 
+    .vignette div
+    {
+        display: flex;
+        flex: 2;
+    }
+    .vignette h4
+    {
+        margin-left: 8%;
+    }
 
     .vignette img
     {
         border-radius: 15px 15px 0px 0px;
-        display: flex;
         width: 100%;
-        flex: 9;
-        background-size: cover;
     }
 
-    .vignette h4
-    {
-        flex:1;
-    }
-
-    .affichage1, .affichage2
+    #conteneur > div
     {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 22%;
+        flex: 1;
         margin: 0% 2% 0% 2%;
         max-height: 450px;
-        align-items: flex-end;
     }
 
-    .affichage1 .vignette, .affichage2 .vignette
+    #conteneur div div
     {
-        width: unset;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border-radius: 15px 15px 0px 0px;
     }
 
     .affichage1 .vignette:first-child
     {
-        flex-shrink: 3;
+        max-height: 60%;
     }
 
     .affichage1 .vignette:last-child
     {
-        flex-shrink: 2;
+        max-height: 35%;
+    }  
+
+    .affichage2 .vignette:first-child
+    {
+        max-height: 45%;
+    }
+
+    .affichage2 .vignette:last-child
+    {
+        max-height: 55%;
+    }
+
+    footer
+    {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        background-color:  #f2f2f2;
+        margin-top: 4%;
+        padding-left: 4%;
+        padding-bottom: 5%;
+        padding-top: 2%;
+    }
+
+    footer section
+    {
+        margin-right: 15%;
+    }
+
+    footer p
+    {
+        margin: 4% 0% 4% 0%;
     }
 
 }
