@@ -1,9 +1,12 @@
 /* 
 - en-tête
 - body
-
-
-
+-barre de recherche
+-filtres
+-populaire
+-hebergements
+-activite
+-footer
 */
 
 @media only screen and (max-width: 480px)
@@ -110,7 +113,7 @@
         margin: unset;
     }
 
-    /*barre de recherche--------------------------------------------*/
+    /*--------------------------------------------barre de recherche--------------------------------------------*/
 
     #recherche
     {
@@ -122,6 +125,11 @@
         border-bottom: #f2f2f2 2px solid;
         border-radius: 20px;
         max-height: 50px;
+    }
+
+    #recherche h2
+    {
+        margin: unset;
     }
 
     #recherche i
@@ -142,7 +150,7 @@
         flex: 2;
     }
 
-    #ville span
+    #ville h2
     {
         display: none;
     }
@@ -254,6 +262,8 @@
         margin-right: 1%;
         margin-top: 2%;
     }
+
+    /*------------------------------------populaire--------------------------------------------*/
 
     #populaire
     {
@@ -331,6 +341,8 @@
         margin: 2%
     }
 
+    /*------------------------------------hebergements--------------------------------------------*/
+
     #hebergements
     {
         display: flex;
@@ -363,6 +375,8 @@
         height: 100px;
         width: 100%;
     }
+
+    /*------------------------------------activite--------------------------------------------*/
 
     #activite
     {
@@ -406,6 +420,8 @@
         margin-top: 10%;
         margin-bottom: 10%;
     }
+
+    /*------------------------------------footer--------------------------------------------*/
 
     footer
     {
@@ -465,6 +481,7 @@
     {
         text-decoration: none;
         color: #0065fc;
+        padding-bottom: 3%;
     }
 
     .menu:nth-child(1)
@@ -474,7 +491,7 @@
         justify-content: center;
         flex: 2;
         border-bottom: 2px solid;
-        border-color: #0065fc;
+        border-color: #f2f2f2;
     }
 
     .menu:nth-child(2)
@@ -484,7 +501,7 @@
         justify-content: center;
         flex: 2;
         border-bottom: 2px solid;
-        border-color: #0065fc;
+        border-color: #f2f2f2;
     }
 
     .menu:hover
@@ -533,6 +550,32 @@
 
     /*barre de recherche--------------------------------------------*/
 
+    #presentation
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 4%;
+    }
+
+    #presentation h1, p 
+    {
+        margin: 0px;
+        margin-top: 2%;
+    }
+
+    h1
+    {
+        font-size: 23px;
+    }
+
+    h3, h4
+    {
+        font-size: 17px;
+        margin: unset;
+    }
+
+    /*barre de recherche--------------------------------------------*/
+
     #recherche
     {
         display: flex;
@@ -543,6 +586,11 @@
         border-bottom: #f2f2f2 2px solid;
         border-radius: 20px;
         max-height: 50px;
+    }
+
+    #recherche h2
+    {
+        margin: unset;
     }
 
     #recherche i
@@ -563,7 +611,7 @@
         flex: 2;
     }
 
-    #ville span
+    #ville h2
     {
         display: none;
     }
@@ -572,8 +620,8 @@
     {
         border: none;
         width: 150%;
-        padding-left: 5%;
         font-weight: bold;
+        padding-left: 5%;
     }
 
     #ville input:focus
@@ -620,8 +668,8 @@
     #filtres button
     {
         display: flex;
-        padding: 0;
         align-items: center;
+        padding: 0;
         border: 2px solid #d9d9d9;
         background-color: white;
         border-radius: 20px;
@@ -665,6 +713,7 @@
         align-items: center;
         justify-content: center;
         color: #0065fc;
+        background-color: white;
         border: #f2f2f2 solid 1px;
         max-width: 15px;
         max-height: 15px;
@@ -672,12 +721,16 @@
         min-width: 15px;
         border-radius: 20px;
         margin-right: 1%;
+        margin-top: 2%;
     }
+
+    /*------------------------------------populaire--------------------------------------------*/
 
     #populaire
     {
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: #f2f2f2;
         padding: 2%;
         margin: 0px;
@@ -689,6 +742,8 @@
         justify-content: space-between;
         align-items: center;
         margin: 4% 2% 4% 2%;
+        min-width: 400px;
+        max-width: 500px;
     }
 
     .vignette-horizontale
@@ -698,6 +753,8 @@
         border-radius: 5px;
         padding: 1%;
         margin: 1%;
+        min-width: 400px;
+        max-width: 500px;
     }
 
     .vignette-horizontale .img_mobile
@@ -749,11 +806,21 @@
         margin: 2%
     }
 
+    /*------------------------------------hebergements--------------------------------------------*/
+
     #hebergements
     {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin: 4%;
+        min-width: 400px;
+    }
+
+    #hebergements h3
+    {
+        min-width: 400px;
+        max-width: 500px;
     }
 
     .vignette-vertical
@@ -763,9 +830,11 @@
         justify-content: space-between;
         padding: 2%;
         margin-top: 5%;
-        height: 170px;
+        height: 200px;
         border-radius: 15px;
         box-shadow: 0px 0px 6px 6px #f3f3f3;
+        min-width: 400px;
+        max-width: 500px;
     }
 
     .vignette-vertical .quatre-etoile
@@ -778,16 +847,27 @@
         display: flex;
         background-size: cover;
         border-radius: 15px 15px 0px 0px;
-        height: 100px;
-        width: 100%;
+        height: 130px;
+        min-width: 400px;
+        max-width: 500px;
     }
 
     #activite
     {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-between;
         margin: 4%;
+    }
+
+    /*------------------------------------activites--------------------------------------------*/
+
+    #activite h3
+    {
+        margin-bottom: 4%;
+        min-width: 400px;
+        max-width: 500px;
     }
 
     .vignette
@@ -796,6 +876,8 @@
         flex-direction: column;
         margin-top: 4%;
         height: 200px;
+        min-width: 400px;
+        max-width: 500px;
         border-radius: 15px;
         box-shadow: 0px 0px 6px 6px #f3f3f3;
     }
@@ -820,6 +902,8 @@
         margin-bottom: 10%;
     }
 
+    /*------------------------------------footer--------------------------------------------*/
+
     footer
     {
         display: flex;
@@ -828,6 +912,7 @@
         background-color:  #f2f2f2;
         padding-left: 4%;
         padding-bottom: 5%;
+
     }
 
     footer h3

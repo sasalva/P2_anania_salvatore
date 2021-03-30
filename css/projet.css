@@ -1,24 +1,34 @@
-/* */
+/* 
+- en-tête
+- body
+-barre de recherche
+-filtres
+-populaire
+-hebergements
+-activite
+-footer
+*/
 
-body
-{
-    font-family: 'Raleway', sans-serif;
-    margin: unset;
-}
-
-header
-{
-    display: flex;
-}
-
-main
-{
-    display: flex;
-    flex-direction: column;
-}
 
 @media only screen and (min-width: 1025px)
 {
+
+    body
+    {
+        font-family: 'Raleway', sans-serif;
+        margin: unset;
+    }
+
+    header
+    {
+        display: flex;
+    }
+
+    main
+    {
+        display: flex;
+        flex-direction: column;
+    }
 
     .img_mobile
     {
@@ -104,6 +114,13 @@ main
         max-width: 30%;
         height: 40px;
     } 
+
+    #recherche h2
+    {
+        margin: unset;
+        color: white;
+        font-size: 12px;
+    }
 
     #recherche i
     {
@@ -227,6 +244,8 @@ main
         margin-right: 1%;
     }
 
+    /*------------------------------------populaire--------------------------------------------*/
+
     #affichage_ordi
     {
         display: flex;
@@ -339,6 +358,8 @@ main
         border-radius: 15px 0px 0px 15px;
     }
 
+    /*------------------------------------hebergements--------------------------------------------*/
+
     .vignette-vertical
     {
         display: flex;
@@ -388,6 +409,8 @@ main
         border-radius: 15px;
         justify-content: space-around;
     }
+
+    /*------------------------------------activites--------------------------------------------*/
 
     #activite
     {
@@ -471,6 +494,8 @@ main
     {
         max-height: 55%;
     }
+
+    /*------------------------------------footer--------------------------------------------*/
 
     footer
     {
