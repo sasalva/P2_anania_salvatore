@@ -39,7 +39,6 @@ nav
 .menu:hover
 {
     color: #0065fc;
-    border-top: 2px solid;
     border-color: #0065fc;
 }
 
@@ -181,6 +180,7 @@ nav
 
 .note
 {
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     color: #0065fc;

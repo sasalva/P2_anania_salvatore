@@ -72,6 +72,11 @@
         right: 20px;
     }
 
+    .menu:hover
+    {
+        border-bottom: 2px solid;
+    }
+
     /*------------------------------------body--------------------------------------------*/
     /*présentation du site*/
 
@@ -252,6 +257,12 @@
         border-radius: 15px 15px 0px 0px;
         width: 100%;
     }
+    
+    .afficher
+    {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
 
     /*------------------------------------activite--------------------------------------------*/
 
@@ -266,7 +277,7 @@
 
     .vignette
     {
-        display: flex;
+        
         flex-direction: column;
         margin-top: 4%;
         height: 200px;
@@ -289,12 +300,6 @@
     .vignette h4
     {
         margin: 5%;
-    }
-
-    .afficher
-    {
-        margin-top: 10%;
-        margin-bottom: 10%;
     }
 
     /*------------------------------------footer--------------------------------------------*/
