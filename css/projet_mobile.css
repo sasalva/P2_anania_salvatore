@@ -39,20 +39,16 @@
 
     nav
     {
-        display: flex;
         justify-content: space-between;
     }
 
     .menu
     {
-        text-decoration: none;
-        color: #0065fc;
         padding-bottom: 3%;
     }
 
     .menu:nth-child(1)
     {
-        color: black;
         display: flex;
         justify-content: center;
         flex: 2;
@@ -62,7 +58,6 @@
 
     .menu:nth-child(2)
     {
-        color: black;
         display: flex;
         justify-content: center;
         flex: 2;
@@ -70,20 +65,11 @@
         border-color: #f2f2f2;
     }
 
-    .menu:hover
-    {
-        color: #0065fc;
-        border-bottom: 2px solid;
-        border-color: #0065fc;
-    }
-
     .menu:nth-child(3)
     {
         position: absolute;
         top: 30%;
         right: 20px;
-        border: none;
-        font-weight: bold;
     }
 
     /*------------------------------------body--------------------------------------------*/
@@ -117,8 +103,6 @@
 
     #recherche
     {
-        display: flex;
-        justify-content: flex-start;
         flex: 1;
         margin: 4%;
         border-top: #f2f2f2 2px solid;
@@ -129,16 +113,12 @@
 
     #recherche span
     {
-        margin: unset;
+        display: none;
     }
 
     #recherche i
     {
         border-radius: 15px 0px 0px 15px;
-        background-color: #f2f2f2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex: 1;
         max-width: 54px;
         max-height: 54px;
@@ -146,26 +126,12 @@
 
     #ville
     {
-        display: flex;
         flex: 2;
     }
 
     #ville h2
     {
         display: none;
-    }
-
-    #ville input
-    {
-        border: none;
-        width: 150%;
-        font-weight: bold;
-        padding-left: 5%;
-    }
-
-    #ville input:focus
-    {
-        outline: none;
     }
 
     #ville i
@@ -177,8 +143,6 @@
 
     #ville button
     {
-        background-color: #0065fc;
-        border: none;
         align-self: center;
         border-radius: 15px;
         min-width: 54px;
@@ -191,6 +155,7 @@
     #filtres
     {
         margin: 4%;
+        margin-bottom: 2%;
     }
 
     #filtres h2
@@ -198,68 +163,20 @@
         font-size: 18px;
     }
 
-    #filtres nav
-    {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     #filtres button
     {
-        display: flex;
-        align-items: center;
-        padding: 0;
-        border: 2px solid #d9d9d9;
-        background-color: white;
-        border-radius: 20px;
-        height: 40px;
-        margin-right: 5%;
         margin-bottom: 2%;
-    }
-
-    #filtres i
-    {
-        display: flex;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        margin-left: -2px;
-        align-items: center;
-        background-color: #deebff;
-        border-radius: 40px;
-        color: #0065fc;
-    }
-
-    #filtres span
-    {
-        display: flex;
-        flex: 2;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 10px 0px 10px;
-        font-weight: bold;
     }
 
     #info
     {
-        display: flex;
-        margin: 6%;
+        margin: 2%;
+        margin-bottom: 8%;
     }
 
     #info i
     {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #0065fc;
-        background-color: white;
         border: #f2f2f2 solid 1px;
-        max-width: 15px;
-        max-height: 15px;
-        min-height: 15px;
-        min-width: 15px;
-        border-radius: 20px;
-        margin-right: 1%;
         margin-top: 2%;
     }
 
@@ -267,27 +184,24 @@
 
     #populaire
     {
-        display: flex;
-        flex-direction: column;
-        background-color: #f2f2f2;
-        padding: 2%;
         margin: 0px;
         padding-bottom: 4%;
     }
 
     .encart
     {
-        display: flex;
-        justify-content: space-between;
         align-items: center;
         margin: 4% 2% 4% 2%;
     }
 
+    .etoiles
+    {
+        justify-content: space-between;
+        margin: 2%
+    }
+
     .vignette-horizontale
     {
-        display: flex;
-        background-color: white;
-        border-radius: 15px;
         padding: 1%;
         margin: 1%;
     }
@@ -301,46 +215,6 @@
         border-radius: 15px 0px 0px 15px;
     }
 
-    .note
-    {
-        display: flex;
-        flex-direction: row;
-        color: #0065fc;
-        margin: 1%;
-    }
-
-    .quatre-etoile .note .fa-star:last-child
-    {
-        color: #d9d9d9;
-    }
-
-    .cinq-etoile
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex: 1;
-        margin: 2%
-    }
-
-    .quatre-etoile
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex: 1;
-        margin: 2%
-    }
-
-    .trois-etoile
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex: 1;
-        margin: 2%
-    }
-
     /*------------------------------------hebergements--------------------------------------------*/
 
     #hebergements
@@ -352,14 +226,10 @@
 
     .vignette-vertical
     {
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
         padding: 2%;
         margin-top: 5%;
-        height: 170px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 6px 6px #f3f3f3;
+        max-height: 200px;
     }
 
     .vignette-vertical .quatre-etoile
@@ -367,12 +237,19 @@
         margin: 1%;
     }
 
-    #hebergements img
+    .image
     {
         display: flex;
-        background-size: cover;
+        align-items: center;
+        overflow: hidden;
         border-radius: 15px 15px 0px 0px;
-        height: 100px;
+        width: 100%;
+        min-height: 130px;
+    }
+
+    .image img
+    {
+        border-radius: 15px 15px 0px 0px;
         width: 100%;
     }
 
@@ -384,6 +261,7 @@
         flex-direction: column;
         justify-content: space-between;
         margin: 4%;
+        margin-bottom: 10%;
     }
 
     .vignette
@@ -392,8 +270,6 @@
         flex-direction: column;
         margin-top: 4%;
         height: 200px;
-        border-radius: 15px;
-        box-shadow: 0px 0px 6px 6px #f3f3f3;
     }
 
     .vignette div
@@ -425,22 +301,17 @@
 
     footer
     {
-        display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        background-color:  #f2f2f2;
-        padding-left: 4%;
-        padding-bottom: 5%;
     }
 
     footer h3
     {
-        margin: 5% 0% 2% 0%;
+        margin: 10% 0% 2% 0%;
     }
 
     footer p
     {
-        margin: 2% 0% 2% 0%;
+        margin: 4% 0% 2% 0%;
     }
 
 }

@@ -20,17 +20,6 @@
         margin-right: auto;
     }
 
-    header
-    {
-        display: flex;
-    }
-
-    main
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
     .img_mobile
     {
         display: none;
@@ -48,7 +37,6 @@
 
     nav
     {
-        display: flex;
         justify-content: flex-end;
         flex-grow: 2;
     }
@@ -58,31 +46,6 @@
         display: flex;
         align-items: center;
         margin-right: 5%;
-        text-decoration: none;
-        color: #0065fc;
-    }
-
-    .menu:nth-child(1)
-    {
-        color: black;
-    }
-
-    .menu:nth-child(2)
-    {
-        color: black;
-    }
-
-    .menu:hover
-    {
-        color: #0065fc;
-        border-top: 2px solid;
-        border-color: #0065fc;
-    }
-
-    .menu:nth-child(3)
-    { 
-        border: none;
-        font-weight: bold;
     }
 
     /*------------------------------------body--------------------------------------------*/
@@ -108,8 +71,6 @@
 
     #recherche
     {
-        display: flex;
-        justify-content: flex-start;
         margin-left: 2%;
         margin-bottom: 1%;
         max-width: 30%;
@@ -125,34 +86,19 @@
 
     #recherche i
     {
-        display: unset;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px 0px 0px 10px;
-        background-color: #f2f2f2;
+        border-radius: 15px 0px 0px 15px;
         width: 10%;
     }
 
     #ville
     {
-        display: flex;
         width: 80%;
     }
 
     #ville input
     {
-        border: none;
         border-top: #f2f2f2 2px solid;
         border-bottom: #f2f2f2 2px solid;
-        width: 100%;
-        font-weight: bold;
-        padding-left: 5%;
-    }
-
-    #ville input:focus
-    {
-        outline: none;
     }
 
     #ville i
@@ -162,8 +108,6 @@
 
     #ville button
     {
-        background-color: #0065fc;
-        border: none;
         border-radius: 0px 10px 10px 0px;
     }
 
@@ -183,66 +127,20 @@
 
     #filtres nav
     {
-        display: flex;
         justify-content: flex-start;
         align-items: center;
-        flex-wrap: wrap;
         margin-left: 5%;
-    }
-
-    #filtres button
-    {
-        display: flex;
-        align-items: center;
-        padding: 0;
-        border: 2px solid #d9d9d9;
-        background-color: white;
-        border-radius: 20px;
-        height: 40px;
-        margin-right: 5%;
-    }
-
-    #filtres i
-    {
-        display: flex;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        margin-left: -2px;
-        align-items: center;
-        background-color: #deebff;
-        border-radius: 40px;
-        color: #0065fc;
-    }
-
-    #filtres span
-    {
-        display: flex;
-        flex: 2;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 10px 0px 10px;
-        font-weight: bold;
     }
 
     #info
     {
-        display: flex;
         margin-left: 2%;
         align-items: center;
     }
 
     #info i
     {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20px;
-        color: #0065fc;
         border: #f2f2f2 solid 1px;
-        width: 20px;
-        border-radius: 20px;
-        margin-right: 1%;
     }
 
     /*------------------------------------populaire--------------------------------------------*/
@@ -254,13 +152,9 @@
 
     #populaire
     {
-        display: flex;
-        flex-direction: column;
         justify-content: space-around;
         margin: 2%;
-        padding: 2%;
         padding-top: 1%;
-        background-color: #f2f2f2;
         order: 2;
         border-radius: 15px;
         flex: 1;
@@ -280,42 +174,13 @@
 
     .encart
     {
-        display: flex;
         align-items: flex-end;
-        justify-content: space-between;
     }
 
-    .note
+    .etoiles
     {
-        display: flex;
-        flex-direction: row;
-        color: #0065fc;
-    }
-
-    .cinq-etoile
-    {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
         margin: 1% 4% 4% 5%;
     }
-
-    .quatre-etoile
-    {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        margin: 1% 4% 4% 5%;
-    }
-
-    .trois-etoile
-    {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        margin: 1% 4% 4% 5%;
-    }
-
 
     .quatre-etoile h4 , .quatre-etoile p
     {
@@ -332,21 +197,8 @@
         margin: 1%;
     }
 
-    .quatre-etoile .note .fa-star:last-child
-    {
-        color: #d9d9d9;
-    }
-
-    .trois-etoile .note .fa-star:last-child, .trois-etoile .note .fa-star:nth-child(4)
-    {
-        color: #d9d9d9;
-    }
-
     .vignette-horizontale
     {
-        display: flex;
-        background-color: white;
-        border-radius: 15px;
         padding: 2%;
         height: 20%;
     }
@@ -363,13 +215,9 @@
 
     .vignette-vertical
     {
-        display: flex;
-        flex-direction: column;
         background-color: white;
         margin: 2%;
         width: 28%;
-        border-radius: 15px;
-        box-shadow: 0px 0px 6px 6px #f3f3f3;
     }
 
     .vignette-vertical img
@@ -435,11 +283,7 @@
 
     .vignette
     {
-        display: flex;
-        flex-direction: column;
         flex: 1;
-        border-radius: 15px;
-        box-shadow: 0px 0px 6px 6px #f3f3f3;
     }
 
     .vignette div
@@ -450,12 +294,6 @@
     .vignette h4
     {
         margin-left: 8%;
-    }
-
-    .vignette img
-    {
-        border-radius: 15px 15px 0px 0px;
-        width: 100%;
     }
 
     #conteneur > div
@@ -478,12 +316,12 @@
 
     .affichage1 .vignette:first-child
     {
-        max-height: 60%;
+        max-height: 55%;
     }
 
     .affichage1 .vignette:last-child
     {
-        max-height: 35%;
+        max-height: 40%;
     }  
 
     .affichage2 .vignette:first-child
@@ -493,20 +331,15 @@
 
     .affichage2 .vignette:last-child
     {
-        max-height: 55%;
+        max-height: 50%;
     }
 
     /*------------------------------------footer--------------------------------------------*/
 
     footer
     {
-        display: flex;
         justify-content: flex-start;
-        flex-wrap: nowrap;
-        background-color:  #f2f2f2;
         margin-top: 4%;
-        padding-left: 4%;
-        padding-bottom: 5%;
         padding-top: 2%;
     }
 
