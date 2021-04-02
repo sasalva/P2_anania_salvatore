@@ -42,6 +42,12 @@ nav
     border-color: #0065fc;
 }
 
+.menu:active
+{
+    color: #0065fc;
+    border-color: #0065fc;
+}
+
 .menu:nth-child(3)
 { 
     border: none;

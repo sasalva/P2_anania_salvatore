@@ -64,6 +64,11 @@
         border-bottom: 2px solid;
     }
 
+    .menu:active
+    {
+        border-bottom: 2px solid;
+    }
+
     /*------------------------------------body--------------------------------------------*/
     /*présentation du site*/
     /*barre de recherche--------------------------------------------*/
