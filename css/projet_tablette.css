@@ -1,11 +1,6 @@
 @media only screen and (min-width: 481px) and (max-width: 1024px)
 {
 
-    .img_ordi
-    {
-        display: none;
-    }
-
     p
     {
         font-size: 15px;

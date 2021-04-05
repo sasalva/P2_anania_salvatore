@@ -110,13 +110,25 @@ nav
     margin-right: 5%;
 }
 
+#filtres button:hover
+{
+    border: 2px solid #0065fc;
+    color: #0065fc;
+}
+
+#filtres button:hover i
+{
+    color: #deebff;
+    background-color: #0065fc;
+}
+
 #filtres i
 {
     display: flex;
     justify-content: center;
     width: 40px;
     height: 40px;
-    margin-left: -2px;
+    margin-left: -3px;
     align-items: center;
     background-color: #deebff;
     border-radius: 40px;
